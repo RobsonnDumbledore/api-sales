@@ -12,6 +12,9 @@
         "resolveJsonModule": true,
         "skipLibCheck": true,
         "forceConsistentCasingInFileNames": true,
+        "strictNullChecks": false,
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
         "baseUrl": "./",
         "paths": {
           "@config/*": ["src/config/*"],
