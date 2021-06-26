@@ -1,9 +1,7 @@
-import { Router } from 'express'
+import { Router } from 'express';
+import productsRouter from '@modules/products/routes/products.routes';
 
-const routes = Router()
+const routes = Router();
+routes.use('/products', productsRouter);
 
-routes.get('/', (request, response) => {
-  return response.json({ message: 'Hello Dev!' })
-})
-
-export default routes
+export default routes;
