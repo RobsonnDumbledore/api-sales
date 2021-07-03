@@ -13,6 +13,10 @@
         "skipLibCheck": true,
         "forceConsistentCasingInFileNames": true,
         "strictNullChecks": false,
+        "typeRoots": [
+          "@types",
+          "./node_modules/@types"
+        ],
         "emitDecoratorMetadata": true,
         "experimentalDecorators": true,
         "baseUrl": "./",
