@@ -4,7 +4,7 @@ import { errors } from 'celebrate';
 import express from 'express';
 import 'express-async-errors';
 import routes from '../routes';
-import { handleError } from '@shared/middlewares/HandleError';
+import { handleError } from '@shared/http/middlewares/HandleError';
 
 const app = express();
 
