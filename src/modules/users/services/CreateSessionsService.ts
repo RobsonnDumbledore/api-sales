@@ -14,7 +14,7 @@ class CreateSessionsService {
     const usersRepository = getCustomRepository(UsersRepository);
     const user = await usersRepository.findByEmail(email);
 
-    if (user) {
+    if (!user) {
       throw new AppError('Incorrect email or password.', 401);
     }
 
